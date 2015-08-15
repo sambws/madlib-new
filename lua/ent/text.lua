@@ -2,6 +2,7 @@ do
   local _parent_0 = Entity
   local _base_0 = {
     update = function(self, dt)
+      self.x = self.x + 2
       return _parent_0.update(self, self)
     end,
     draw = function(self)
@@ -15,9 +16,7 @@ do
   local _class_0 = setmetatable({
     __init = function(self, x, y)
       self.x, self.y = x, y
-      _parent_0.__init(self, self, 0, 0, "text_thing")
-      math.randomseed(50)
-      return print(math.random(1, 5))
+      return _parent_0.__init(self, self, 0, 0, "text_thing")
     end,
     __base = _base_0,
     __name = "TextThing",

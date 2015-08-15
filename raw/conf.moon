@@ -2,7 +2,7 @@
 love.conf = (t) ->
 	t.window.width = 448
 	t.window.height = 736
-	t.window.title = "cooking game?"
+	t.window.title = "madlib"
 	t.window.borderless = true
 	t.console = true
 
