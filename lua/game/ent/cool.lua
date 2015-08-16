@@ -14,8 +14,7 @@ do
   local _class_0 = setmetatable({
     __init = function(self, x, y)
       self.x, self.y = x, y
-      _parent_0.__init(self, self, 32, 32, "cool")
-      self.var = 1
+      return _parent_0.__init(self, self, 32, 32, "cool")
     end,
     __base = _base_0,
     __name = "Cool",

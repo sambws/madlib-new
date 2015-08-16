@@ -1,5 +1,4 @@
 require("lib.mad.require")
-require("lib.mad.TEsound")
 local bump = require("lib.mad.bump")
 local gamera = require("lib.mad.gamera")
 local anim8 = require("lib.mad.anim8")
@@ -230,19 +229,6 @@ mad = {
     zord = function(self, s, mod)
       mod = mod or 0
       s.z = -s.y - (s.h) + mod
-    end
-  },
-  audio = {
-    playSound = function(self, sound, tags, velocity, pitch)
-      velocity = velocity or 1
-      pitch = pitch or 1
-      return TEsound.play(path.snd .. sound, tags, velocity, pitch)
-    end,
-    loopSound = function(self, sound, tags, loops, velocity, pitch)
-      velocity = velocity or 1
-      pitch = pitch or 1
-      loops = loops or 1
-      return TEsound.playLooping(path.snd .. sound, tags, loops, velocity, pitch)
     end
   },
   math = {
