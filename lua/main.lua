@@ -1,13 +1,6 @@
 require("lib.mad.madlib")
+require("rooms")
 require.tree("ent")
-room_reg = {
-  debug_room = {
-    name = "debug_room",
-    event = function(self)
-      return mad.object:create(TextThing(128, 128))
-    end
-  }
-}
 love.load = function()
   love.graphics.setDefaultFilter('nearest', 'nearest')
   mad:init()

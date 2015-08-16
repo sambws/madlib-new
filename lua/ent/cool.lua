@@ -6,8 +6,7 @@ do
     end,
     draw = function(self)
       love.graphics.setColor(255, 255, 255)
-      love.graphics.print("MADLIB!", self.x, self.y)
-      return _parent_0.draw(self, self)
+      return love.graphics.rectangle("fill", self.x, self.y, self.w, self.h)
     end
   }
   _base_0.__index = _base_0
@@ -15,10 +14,10 @@ do
   local _class_0 = setmetatable({
     __init = function(self, x, y)
       self.x, self.y = x, y
-      return _parent_0.__init(self, self, 0, 0, "text_thing")
+      return _parent_0.__init(self, self, 32, 32, "cool")
     end,
     __base = _base_0,
-    __name = "TextThing",
+    __name = "Cool",
     __parent = _parent_0
   }, {
     __index = function(cls, name)
@@ -39,5 +38,5 @@ do
   if _parent_0.__inherited then
     _parent_0.__inherited(_parent_0, _class_0)
   end
-  TextThing = _class_0
+  Cool = _class_0
 end

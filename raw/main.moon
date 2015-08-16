@@ -1,18 +1,7 @@
 --stuff to require; madlib, data registry, entities, etc.
 require "lib.mad.madlib"
+require "rooms"
 require.tree "ent"
-
---room registry
-export room_reg = {
-
-	--end results screen for the dungeon
-	debug_room: {
-		name: "debug_room"
-		event: =>
-			mad.object\create(TextThing(128, 128))
-	}
-
-}
 
 love.load = ->
 	love.graphics.setDefaultFilter('nearest', 'nearest')
