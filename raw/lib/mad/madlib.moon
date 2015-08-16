@@ -42,7 +42,6 @@
 ----------------------------------------------------
 
 require "lib.mad.require" --we need this for entity requiring
-require "lib.mad.TEsound" --sound stuff (may remove this)
 bump = require "lib.mad.bump" --collision!
 gamera = require "lib.mad.gamera" --camera
 anim8 = require "lib.mad.anim8" --animation/sprites
@@ -290,21 +289,6 @@ export mad = {
 		zord: (s, mod) =>
 			mod = mod or 0
 			s.z = -s.y - (s.h) + mod
-
-	--sound functionality
-	audio:
-		--plays a sound
-		playSound: (sound, tags, velocity, pitch) =>
-			velocity = velocity or 1
-			pitch = pitch or 1
-			TEsound.play(path.snd .. sound, tags, velocity, pitch)
-
-		--loop sound
-		loopSound: (sound, tags, loops, velocity, pitch) =>
-			velocity = velocity or 1
-			pitch = pitch or 1
-			loops = loops or 1
-			TEsound.playLooping(path.snd .. sound, tags, loops, velocity, pitch)
 
 	-------------------------
 	----PART 3.4: MISC----
