@@ -10,12 +10,9 @@
 	--basic collision functions
 	--really basic entity mapper
 	--camera (gamera by kikito)
-	--sound (TEsound)
 	--animation (anim8)
 --TODO
-	--mouse input
-	--update mad.draw to only check the ents table like the rest
-	--work on the entity editor
+	--:S
 
 
 
@@ -35,7 +32,6 @@
 
 ----RESERVED MADLIB FUNCTIONS-----
 --to be written
-
 
 ----------------------------------------------------
 ----PART 1: REQUIRING THE SHIT WE NEED----
