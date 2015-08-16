@@ -1,3 +1,5 @@
+require.tree "game.ent"
+
 export room_reg = {
 
 	--end results screen for the dungeon

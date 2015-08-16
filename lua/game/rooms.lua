@@ -1,3 +1,4 @@
+require.tree("game.ent")
 room_reg = {
   debug_room = {
     name = "debug_room",

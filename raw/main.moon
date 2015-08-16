@@ -1,7 +1,6 @@
 --stuff to require; madlib, data registry, entities, etc.
 require "lib.mad.madlib"
-require "rooms"
-require.tree "ent"
+require "game.rooms"
 
 love.load = ->
 	love.graphics.setDefaultFilter('nearest', 'nearest')

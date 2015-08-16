@@ -1,6 +1,5 @@
 require("lib.mad.madlib")
-require("rooms")
-require.tree("ent")
+require("game.rooms")
 love.load = function()
   love.graphics.setDefaultFilter('nearest', 'nearest')
   mad:init()

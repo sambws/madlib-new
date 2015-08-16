@@ -69,9 +69,9 @@ export joystick = joy_table[1] --sets up a joystick 4 fun u know?
 
 --resource paths. we use this to find stuff!
 export path = {
-	img: "res/img/"
-	snd: "res/snd/"
-	dat: "res/dat/"
+	img: "game/res/img/"
+	snd: "game/res/snd/"
+	dat: "game/res/dat/"
 	--add any other external resource paths here!
 }
 
