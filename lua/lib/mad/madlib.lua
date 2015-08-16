@@ -11,9 +11,9 @@ ents = { }
 joy_table = love.joystick.getJoysticks()
 joystick = joy_table[1]
 path = {
-  img = "res/img/",
-  snd = "res/snd/",
-  dat = "res/dat/"
+  img = "game/res/img/",
+  snd = "game/res/snd/",
+  dat = "game/res/dat/"
 }
 debug = {
   debugMode = true,

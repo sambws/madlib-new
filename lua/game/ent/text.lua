@@ -15,7 +15,8 @@ do
   local _class_0 = setmetatable({
     __init = function(self, x, y)
       self.x, self.y = x, y
-      return _parent_0.__init(self, self, 0, 0, "text_thing")
+      _parent_0.__init(self, self, 0, 0, "text_thing")
+      return print(Cool.var)
     end,
     __base = _base_0,
     __name = "TextThing",

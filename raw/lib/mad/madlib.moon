@@ -66,7 +66,6 @@ export joy_table = love.joystick.getJoysticks() --gets list of joysticks
 export joystick = joy_table[1] --sets up a joystick 4 fun u know?
 
 
-
 --resource paths. we use this to find stuff!
 export path = {
 	img: "game/res/img/"
